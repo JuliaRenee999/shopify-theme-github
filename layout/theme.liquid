@@ -16,7 +16,7 @@
         {%- endunless -%}
     
         <title>
-          {{ I'm Testing This Out }}
+          <h1>Testing This Out</h1>
           {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
           {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
           {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
@@ -250,7 +250,7 @@
           {{ 'component-localization-form.css' | asset_url | stylesheet_tag: preload: true }}
           <script src="{{ 'localization-form.js' | asset_url }}" defer="defer"></script>
         {%- endif -%}
-    
+        
         {%- if settings.predictive_search_enabled -%}
           <link
             rel="stylesheet"
